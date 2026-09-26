@@ -1,0 +1,16 @@
+{
+  "newpipe": {
+    "version": "v0.29.1",
+    "file": "NewPipe_v0.29.1.apk",
+    "url": "https://github.com/covezs/apks/releases/download/newpipe-v0.29.1/NewPipe_v0.29.1.apk",
+    "upstream": "https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.1",
+    "size": 11507122
+  },
+  "obtainium": {
+    "version": "v1.6.17",
+    "file": "app-release.apk",
+    "url": "https://github.com/covezs/apks/releases/download/obtainium-v1.6.17/app-release.apk",
+    "upstream": "https://github.com/ImranR98/Obtainium/releases/tag/v1.6.17",
+    "size": 72251016
+  }
+}

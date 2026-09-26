@@ -1,4 +1,4 @@
 [
   { "name": "newpipe",    "repo": "TeamNewPipe/NewPipe",  "pattern": "\\.apk$" },
-  { "name": "obtainium",  "repo": "ImranR98/Obtainium",   "pattern": "Obtainium.*\\.apk$" }
+  { "name": "obtainium",  "repo": "ImranR98/Obtainium",   "pattern": "^app-release\\.apk$" }
 ]

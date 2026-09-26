@@ -24,7 +24,7 @@ def api(url, data=None, headers=None, method=None):
     h = dict(HEADERS)
     if headers:
         h.update(headers)
-    body = json.dumps(data).encode() if data is not None else None
+    body = data if isinstance(data, bytes) else (json.dumps(data).encode() if data is not None else None)
     req = urllib.request.Request(url, data=body, headers=h, method=method)
     return urllib.request.urlopen(req)
 
