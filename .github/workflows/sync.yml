@@ -1,0 +1,29 @@
+name: sync-apks
+on:
+  schedule:
+    - cron: "0 22 * * *"   # 每天 06:00 CST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 同步 APK
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER_REPO: ${{ github.repository }}
+        run: python sync.py
+      - name: 提交 manifest
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add manifest.json
+          git diff --cached --quiet || git commit -m "chore: sync manifest"
+          git push
