@@ -7,10 +7,10 @@
     "size": 16980865
   },
   "obtainium": {
-    "version": "v1.7.4",
+    "version": "v1.7.5",
     "file": "app-release.apk",
-    "url": "https://github.com/covezs/apks/releases/download/obtainium-v1.7.4/app-release.apk",
-    "upstream": "https://github.com/ImranR98/Obtainium/releases/tag/v1.7.4",
-    "size": 94182837
+    "url": "https://github.com/covezs/apks/releases/download/obtainium-v1.7.5/app-release.apk",
+    "upstream": "https://github.com/ImranR98/Obtainium/releases/tag/v1.7.5",
+    "size": 92933557
   }
 }
